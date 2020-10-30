@@ -37,8 +37,8 @@
     </div>
     <div class="item c">
     <?php
-    echo("<h2>Zad 3 Select * FROM pracownicy where zarobki between 15 and 30 and dzial=3 or dzial=1</h2>");
-    worker("Select * FROM pracownicy where dzial=3 or dzial=1 and zarobki between 15 and 30");
+    echo("<h2>Zad 3 Select * FROM pracownicy where zarobki between 15 and 50 and (dzial=3 or dzial=1)</h2>");
+    worker("Select * FROM pracownicy where (dzial=3 or dzial=1) and zarobki between 15 and 50");
     ?>
     </div>
     <div class="item d">
@@ -49,8 +49,8 @@
     </div>
     <div class="item e">
     <?php
-    echo("<h2>Zad 5 Select * FROM pracownicy where zarobki>10 and dzial=1 or dzial=3</h2>");
-    worker("Select * FROM pracownicy where zarobki>10 and dzial=1 or dzial=3");
+    echo("<h2>Zad 5 Select * FROM pracownicy where zarobki>10 and (dzial=1 or dzial=3)</h2>");
+    worker("Select * FROM pracownicy where zarobki>10 and (dzial=1 or dzial=3)");
     ?>
     </div>
 </div>
