@@ -12,7 +12,7 @@
         echo("<h1>Kamil Dymek</h1>");
         echo("<h2>Zad 1 Select * FROM pracownicy</h2>");
         function worker($F_sql){
-            $conn= new mysqli("mysql-muffie.alwaysdata.net","muffie","kamilbaza123","muffie_db");
+            require("connect.php");
             $result=$conn->query($F_sql);
             echo("<table border=1>");
             echo("<th>id</th>");
