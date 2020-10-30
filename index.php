@@ -1,6 +1,6 @@
 <?php
     echo("<h1>Kamil Dymek</h1>");
-    $conn= new mysqli("mysql-muffie.alwaysdata.net","muffie","","muffie_db");
+    $conn= new mysqli("mysql-muffie.alwaysdata.net","muffie","kamilbaza","muffie_db");
     $sql= ('SELECT * FROM pracownicy');
     $result=$conn->query($sql);
     echo("<table border=1>");
