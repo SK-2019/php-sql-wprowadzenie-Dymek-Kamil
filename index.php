@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="con">
-    <a href="#"><img class="obraz" src=p.png></a>
-    <a href="#"><img class="obraz1" src=p.png></a>
+    <a href="#"><img class="obraz" src=P.png></a>
+    <a href="#"><img class="obraz1" src=P.png></a>
         <div class="item a">
             <h2 class="h2za">Select * From pracownicy</h2>
         <?php
