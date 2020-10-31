@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="con">
-    <a href="#"><img class="obraz" src=P.png></a>
-    <a href="#"><img class="obraz1" src=P.png></a>
+    <a href=""><img class="obraz" src=p.png></a>
+    <a href=""><img class="obraz1" src=p.png></a>
         <div class="item a">
             <h2 class="h2za">Select * From pracownicy</h2>
         <?php
@@ -47,6 +47,12 @@
         </div>
         <div class="item c">
             <h2 class=h2zc>Zad 3 Select avg(zarobki), dzial From pracownicy group by dzial</h2>
+            <div class="link1">
+            <a href="index.html" class="li1">LINK</a>
+            </div>
+            <div class="link2">
+            <a href="index1.php" class="li2">LINK</a>
+            </div>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select avg(zarobki), dzial From pracownicy group by dzial");
@@ -62,6 +68,8 @@
         </div>
         <div class="item d">
             <h2>Zad 4 Select * From pracownicy where imie not like '%a' and zarobki between 15 and 50</h2>
+            <a href=""><img class="obraz2" src=p.png></a>
+            <a href=""><img class="obraz3" src=p.png></a>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select * From pracownicy where imie not like '%a' and zarobki between 15 and 50");

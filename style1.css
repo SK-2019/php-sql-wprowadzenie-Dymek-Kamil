@@ -1,0 +1,58 @@
+.con{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a a b b c"
+    "a a d d c"
+    "a a d d c"
+    "a a e e e"
+    "f f f f f";
+    gap:10px;
+}
+.item{
+    background:lightblue
+}
+.a{
+    grid-area:a;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.b{
+    grid-area:b;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.c{
+    grid-area:c;
+    display:flex;
+    justify-content: center;
+}
+.d{
+    grid-area:d;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.e{
+    grid-area:e;
+}
+.f{
+    grid-area:f;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    background:white;
+    margin:20px;
+}
+.menu{
+    display:flex;
+    flex-direction:column;
+}
+
+
