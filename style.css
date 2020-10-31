@@ -1,0 +1,171 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.con{
+    height:100vh;
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b c"
+    "a d c"
+    "e e e";
+    position: relative;
+}
+.a{
+    grid-area:a;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right,white,gray);
+}
+.b{
+    grid-area:b;
+    background-image:url(https://turysci.pl/s/i/202006/large/zachod-slonca-1591101053.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.c{
+    grid-area:c;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to left,white,gray);
+}
+.d{
+    grid-area:d;
+    background-image:url(https://v.wpimg.pl/MTI2NDUzYjUoUDh3egFvIGsIbC08WGF2PBB0Zno1YmJ9BjZwZkxiMGdFPi04HWMkJR1_dWxIfGBwA3hxeFd8Y3kHd31iSn5jZlUhNixUPTouEDM=);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.e{
+    grid-area:e;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:lightslategray;
+}
+table, th, td{
+    border:1px solid black;
+}
+table{
+    background-color:lightgrey;
+}
+th{
+    height: 25px;
+    text-align: center;
+    background-color:#b9b8b8;
+}
+td{
+    text-align: left;
+}
+th, td{
+    border-bottom:1px solid darkblue;
+    border-top:1px solid darkblue;
+    border-left: 1px solid darkblue;
+    border-right: 1px solid darkblue;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover{background-color:gray;}
+
+.h2za{
+    text-shadow:30px 15px 3px grey;
+}
+.h2zc{
+    text-shadow:30px 15px 3px grey;
+}
+.h1zb{
+    color:rgb(255, 255, 255);
+}
+.h2zb{
+    color:rgb(112, 108, 108);
+}
+@keyframes animacja{
+    0%{
+        transform: rotate(0deg);
+        width: 150px;
+        height: 150px;
+    }
+    25%{
+        transform: rotate(90deg);
+        width: 125px;
+        height: 125px;
+    }
+    50%{
+        transform: rotate(180deg);
+        width: 100px;
+        height: 100px;
+    }
+    75%{
+        3
+        transform: rotate(270deg);
+        width: 75px;
+        height: 75px;
+    }
+    100%{
+        transform: rotate(360deg);
+        width: 50px;
+        height: 50px;
+    }
+}
+.obraz{
+    position: absolute;
+    top:75vh;
+    left:10vw;
+    width: 150px;
+    height: 150px;
+}
+.obraz:hover{
+    animation:animacja 3s;
+}
+@keyframes animacja2{
+    0%{
+        transform: rotate(0deg);
+        width: 150px;
+        height: 150px;
+    }
+    25%{
+        transform: rotate(-90deg);
+        width: 125px;
+        height: 125px;
+    }
+    50%{
+        transform: rotate(-180deg);
+        width: 100px;
+        height: 100px;
+    }
+    75%{
+        transform: rotate(-270deg);
+        width: 75px;
+        height: 75px;
+    }
+    100%{
+        transform: rotate(-360deg);
+        width: 50px;
+        height: 50px;
+    }
+}
+.obraz1{
+    position: absolute;
+    top:75vh;
+    left:83vw;
+    width: 150px;
+    height: 150px;
+}
+.obraz1:hover{
+    animation:animacja2 3s;
+}
