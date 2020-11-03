@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="con">
-    <a href=""><img class="obraz" src=p.png></a>
-    <a href=""><img class="obraz1" src=p.png></a>
+    <a href="#"><img class="obraz" src=p.png></a>
+    <a href="#"><img class="obraz1" src=p.png></a>
         <div class="item a">
             <h2 class="h2za">Select * From pracownicy</h2>
         <?php
@@ -28,7 +28,7 @@
                             echo("</tr>");}
                 echo("</table>");
         ?>
-        </div>xa
+        </div>
         <div class="item b">
             <h1 class="h1zb">Kamil Dymek</h1>
             <h2 class="h2zb">Zad 2 Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
