@@ -48,7 +48,7 @@
         <div class="item c">
             <h2 class=h2zc>Zad 3 Select avg(zarobki), dzial From pracownicy group by dzial</h2>
             <div class="link1">
-            <a href="index1.html" class="li1">LINK</a>
+            <a href="index.html" class="li1">LINK</a>
             </div>
             <div class="link2">
             <a href="index1.php" class="li2">LINK</a>
