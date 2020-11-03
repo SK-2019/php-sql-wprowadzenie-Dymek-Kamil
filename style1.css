@@ -1,0 +1,45 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.con{
+    height: 100vh;
+    width: 100vw;
+    animation:animacja 20s infinite;
+    background:gray;
+}
+@keyframes animacja{
+    0%{
+        background:white;
+    }
+    10%{
+        background:whitesmoke;
+    }
+    20%{
+        background:lightyellow;
+    }
+    30%{
+        background:lightgreen;
+    }
+    40%{
+        background:limegreen;
+    }
+    50%{
+        background:green;
+    }
+    60%{
+        background:blue;
+    }
+    70%{
+        background:violet;
+    }
+    80%{
+        background:purple;
+    }
+    90%{
+        background:darkblue;
+    }
+    100%{
+        background:black;
+    }
+}
