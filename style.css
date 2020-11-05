@@ -199,3 +199,9 @@ tr:hover{background-color:gray;}
         height: 50px;
     }
 }
+.Github{
+    padding:10px;
+    text-decoration: none;
+    background:black;
+    color:white;
+}

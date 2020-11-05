@@ -28,6 +28,7 @@
         </div>
         <div class="item b">
             <h1 class="h1zb">Kamil Dymek</h1>
+            <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil" class="Github">GITHUB</a>
             <h2 class="h2zb">Zad 2 Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
         <?php
                 require_once("connect.php");
