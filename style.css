@@ -4,6 +4,7 @@
 }
 .con{
     height:100vh;
+    position: relative;
 }
 body{
     background:lightgray;
@@ -52,8 +53,9 @@ tr:hover{background-color:gray;}
 .nav1{
     display:flex;
     justify-content: center;
-    width: 50vw;
+    width: 11,5%;
     height: 40px;
     background:black;
-    justify-content: space-between;
+    position:absolute;
+    left:3%;
 }

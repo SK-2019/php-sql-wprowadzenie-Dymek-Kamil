@@ -16,9 +16,9 @@
             <a class="link d" href="Index.php">Index</a>
         </div>
         <div class="nav1">
-                <a href="#1">GROUP BY</a>
-                <a href="#2">HAVING</a>
-                <a href="#3">FUNKCJE</a>
+                <a class="link e" href="#1">Group By</a>
+                <a class="link f" href="#2">Having</a>
+                <a class="link g" href="#3">Funkcje</a>
             </div>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>
