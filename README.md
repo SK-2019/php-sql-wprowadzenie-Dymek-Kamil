@@ -1,2 +1,2 @@
 # PHP-SQL-wprowadzenie
-https://php-primer-kamil.herokuapp.com/
+https://testing-some-stuff.herokuapp.com/
