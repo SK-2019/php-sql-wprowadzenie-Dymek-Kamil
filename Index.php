@@ -13,7 +13,7 @@
             <a class="link 2" href="Pracownicy.php">Pracownicy</a>
             <a class="link 3" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
             <a class="link 4" href="Funkcje agregujące.php">Funkcje agregujące</a>
-            <a class="link 5" href="Index.php">Index</a>
+            <a class="link 5" href="Index.php">Strona Główna</a>
         </div>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>
