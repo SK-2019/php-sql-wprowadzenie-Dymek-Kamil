@@ -13,7 +13,7 @@
             <a class="link a" href="Pracownicy.php">Pracownicy</a>
             <a class="link b" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
             <a class="link c" href="Funkcje agregujące.php">Funkcje agregujące</a>
-            <a class="link d" href="Index.php">Strona Główna</a>
+            <a class="link d" href="index.php">Strona Główna</a>
         </div>
         <div class="nav1">
                 <a class="link e" href="#1">Group By</a>
