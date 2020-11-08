@@ -16,13 +16,14 @@
             <a class="link d" href="index.php">Index</a>
         </div>
         <div class="nav1">
-                <a class="link e" href="#1">Group By</a>
-                <a class="link f" href="#2">Having</a>
-                <a class="link g" href="#3">Funkcje</a>
+                <a class="link g" href="#1">Funkcje</a>
+                <a class="link e" href="#2">Group By</a>
+                <a class="link f" href="#3">Having</a>
+                <a class="link g" href="#4">Data i Czas</a>
             </div>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>
-        <h1 id="3">FUNKCJE</h1>
+        <h1 id="1">FUNKCJE</h1>
             <h2 class="h2za">Select Sum(zarobki) as sz from pracownicy</h2>
         <?php
                 require_once("connect.php");
@@ -135,7 +136,7 @@
             ?>
         </div>
         <div class="item h">
-            <h1 id="1">GROUP BY</h1>
+            <h1 id="2">Group By</h1>
             <h2>Select sum(zarobki) as sz from pracownicy group by dzial</h2>
         <?php
                 require_once("connect.php");
@@ -206,7 +207,7 @@
             ?>
         </div>
         <div class="item m">
-            <h1 id="2">HAVING</h1>
+            <h1 id="3">Having</h1>
             <h2>Select sum(zarobki) as sz, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial having sum(zarobki)<28</h2>
         <?php
                 require_once("connect.php");
@@ -251,6 +252,46 @@
                 echo("</table>");
             ?>
         </div>
+        <div class="item m">
+        <h1 id="4">Data i Czas</h1>
+        <h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                    echo("<th>Wiek</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["wiek"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
+    </div>
+    <div class="item m">
+        <h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
+        <?php
+                require_once("connect.php");
+                $result=$conn->query("Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org and nazwa_dzial='serwis'");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_Urodzenia</th>");
+                    echo("<th>Wiek</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["wiek"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+            ?>
     </div>
 </body>
 </html>
