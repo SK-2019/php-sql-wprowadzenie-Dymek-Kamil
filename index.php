@@ -9,11 +9,12 @@
 <body>
     <div class="con">
         <div class="nav">
-        <a class="link 1" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil" >GITHUB</a>
-            <a class="link 2" href="Pracownicy.php">Pracownicy</a>
-            <a class="link 3" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-            <a class="link 4" href="Funkcje agregujące.php">Funkcje agregujące</a>
-            <a class="link 5" href="index.php">Index</a>
+        <a class="link a" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil" >GITHUB</a>
+            <a class="link b" href="Pracownicy.php">Pracownicy</a>
+            <a class="link c" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
+            <a class="link d" href="Funkcje agregujące.php">Funkcje agregujące</a>
+            <a class="link e" href="index.php">Index</a>
+            <a class="link h" href="data i czas.php">Data i Czas</a>
         </div>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>

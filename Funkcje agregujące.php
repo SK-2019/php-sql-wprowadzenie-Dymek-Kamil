@@ -14,12 +14,12 @@
             <a class="link b" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
             <a class="link c" href="Funkcje agregujące.php">Funkcje agregujące</a>
             <a class="link d" href="index.php">Index</a>
+            <a class="link h" href="data i czas.php">Data i Czas</a>
         </div>
         <div class="nav1">
                 <a class="link g" href="#1">Funkcje</a>
                 <a class="link e" href="#2">Group By</a>
                 <a class="link f" href="#3">Having</a>
-                <a class="link g" href="#4">Data i Czas</a>
             </div>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>
