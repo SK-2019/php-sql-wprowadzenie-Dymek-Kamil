@@ -22,7 +22,7 @@
                 <a class="link g" href="#3">LIMIT</a>
             </div>
         <div class="item a">
-        <h1 class="h1zb">Kamil Dymek</h1>
+        <h1 class="h1zb">Kamil Dymek</h1
         <h1 id="1">Organizacja</h1>
             <h2 class="h2za">Select * From pracownicy, organizacja where dzial=id_org</h2>
         <?php
