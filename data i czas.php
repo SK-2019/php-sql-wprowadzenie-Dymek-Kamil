@@ -16,6 +16,7 @@
             <a class="link d" href="index.php">Index</a>
             <a class="link h" href="data i czas.php">Data i Czas</a>
         </div>
+        <h1>Kamil Dymek</h1>
         <div class="item a">
         <h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
         <?php
