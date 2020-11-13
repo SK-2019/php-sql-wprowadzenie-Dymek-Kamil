@@ -233,6 +233,7 @@
         <h2>SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy</h2>
         <?php
                 require_once("connect.php");
+                $result=$conn->query("SET lc_time_names = 'pl_PL'");
                 $result=$conn->query("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy");
                 echo("<table border=1>");
                     echo("<th>Id</th>");
@@ -358,13 +359,13 @@
                 require_once("connect.php");
                 $result=$conn->query("SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia FROM pracownicy order by 
                 case  
-                WHEN dzien = 'Monday' THEN 1
-                WHEN dzien = 'Tuesday' THEN 2
-                WHEN dzien = 'Wednesday' THEN 3
-                WHEN dzien= 'Thursday' THEN 4
-                WHEN dzien = 'Friday' THEN 5
-                WHEN dzien = 'Saturday' THEN 6
-                WHEN dzien = 'Sunday' THEN 7
+                WHEN dzien = 'Poniedziałek' THEN 1
+                WHEN dzien = 'Wtorek' THEN 2
+                WHEN dzien = 'Środa' THEN 3
+                WHEN dzien= 'Czwartek' THEN 4
+                WHEN dzien = 'Piątek' THEN 5
+                WHEN dzien = 'Sobota' THEN 6
+                WHEN dzien = 'Niedziela' THEN 7
                 END ASC");
                 echo("<table border=1>");
                     echo("<th>Imie</th>");
@@ -378,10 +379,10 @@
             ?>
     </div>
     <div class="item w">
-        <h2>SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Monday'</h2>
+        <h2>SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Monday'");
+                $result=$conn->query("SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'");
                 echo("<table border=1>");
                     echo("<th>Pracownicy urodzeni w pon</th>");
                         while($row=$result->fetch_assoc()){
