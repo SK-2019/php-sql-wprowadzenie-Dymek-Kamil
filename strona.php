@@ -1,5 +1,5 @@
 <?php
   echo("strona.php");<br>
 
-  echo($POST_['name']);
+  echo($_POST['name']);
 ?>
