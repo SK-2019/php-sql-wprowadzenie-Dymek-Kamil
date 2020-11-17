@@ -16,6 +16,10 @@
             <a class="link d" href="Funkcje agregujące.php">Funkcje agregujące</a>
             <a class="link h" href="data i czas.php">Data i Czas</a>
         </div>
+    <form action="" method="POST">
+        <input type="text" name="Hej" placeholder="Imie">
+        <input type="submit" value="Wyślij">
+    </form>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>
             <h2 class="h2za">Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial</h2>
