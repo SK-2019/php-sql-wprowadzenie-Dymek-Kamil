@@ -16,7 +16,7 @@
             <a class="link d" href="Funkcje agregujące.php">Funkcje agregujące</a>
             <a class="link h" href="data i czas.php">Data i Czas</a>
         </div>
-    <form action="" method="POST">
+    <form action="strona.php" method="POST">
         <input type="text" name="Hej" placeholder="Imie">
         <input type="submit" value="Wyślij">
     </form>
