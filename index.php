@@ -18,25 +18,31 @@
         </div>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>
-        <form action="strona.php" method="POST">
-        <input type="text" name="Imie" placeholder="Imie">
+        <form action="insert.php" method="POST">
+        <input type="text" name="imie" placeholder="Imie">
         <br><input type="text" name="dzial" placeholder="Dzial">
         <br><input type="text" name="zarobki" placeholder="Zarobki">
         <br><input type="date" name="data_">
-        <input type="submit" value="Wyślij">
+        <input type="submit" value="Dodaj">
         </form>
-            <h2 class="h2za">Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial</h2>
+            <h2 class="h2za">Select * from pracownicy</h2>
             <div class="">
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial");
+                $result=$conn->query("Select * from pracownicy");
                 echo("<table border=1>");
-                    echo("<th>Count(Imie)</th>");
+                    echo("<th>Id</th>");
+                    echo("<th>Imie</th>");
                     echo("<th>Dzial</th>");
-                    echo("<th>Nazwa_Dzial</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_urodzenia</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
-                            echo("<td>".$row["ci"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("<td><form action=delete.php method=POST>");
+                            echo("<input type='hidden' name='id' value=".$row['id_pracownicy'].">");
+                            echo("<input type=submit value=X>");
+                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
