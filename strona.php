@@ -1,3 +1,5 @@
 <?php
-  echo("strona.php");
+  echo("strona.php");<br>
+
+  echo(".$POST['name'].");
 ?>
