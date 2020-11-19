@@ -15,16 +15,10 @@
             <a class="link c" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
             <a class="link d" href="Funkcje agregujące.php">Funkcje agregujące</a>
             <a class="link h" href="data i czas.php">Data i Czas</a>
+            <a class="link z" href="formularz.html">Formularz</a>
         </div>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>
-        <form action="insert.php" method="POST">
-        <input type="text" name="imie" placeholder="Imie">
-        <br><input type="text" name="dzial" placeholder="Dzial">
-        <br><input type="text" name="zarobki" placeholder="Zarobki">
-        <br><input type="date" name="data_">
-        <input type="submit" value="Dodaj">
-        </form>
             <h2 class="h2za">Select * from pracownicy</h2>
             <div class="">
         <?php
@@ -39,10 +33,6 @@
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
                             echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
-                            echo("<td><form action=delete.php method=POST>");
-                            echo("<input type='hidden' name='id' value=".$row['id_pracownicy'].">");
-                            echo("<input type=submit value=X>");
-                            echo("</form></td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
