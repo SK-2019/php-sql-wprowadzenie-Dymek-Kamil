@@ -9,7 +9,7 @@
 <body>
     <div class="con">
         <div class="nav">
-            <a class="link z" href="Index.php">Wróć do strony głównej</a>
+            <a class="link z" href="index.php">Wróć do strony głównej</a>
         </div>
         <div class="item a">
             <h1>Dodaj Pracownika :D</h1>
