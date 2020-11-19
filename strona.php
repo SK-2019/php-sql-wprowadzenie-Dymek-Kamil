@@ -8,13 +8,20 @@
 </head>
 <body>
     <div class="con">
+        <div class="nav">
+            <a class="link z" href="Index.php">Wróć do strony głównej</a>
+        </div>
         <div class="item b">
             <h1>Dodano:</h1>
 <?php
-        echo("<li> Imie:".$_POST['imie']."</li>");
-        echo("<li> Dzial:".$_POST['dzial']."</li>");
-        echo("<li> Zarobki:".$_POST['zarobki']."</li>");
-        echo("<li> Data:".$_POST['data_']."</li>");
+        echo("Imie:".$_POST['imie']."<br>");
+        echo("Dzial:".$_POST['dzial']."<br>");
+        echo("Zarobki:".$_POST['zarobki']."<br>");
+        echo("Data:".$_POST['data_']);;
+      require_once("connect.php");
+      $sql =  "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (NULL,'".$_POST['imie']."','".$_POST['dzial']."','".$_POST['zarobki']."','".$_POST['data_']."')";
+      mysqli_query($conn,$sql);
+      mysqli_close($conn);
     ?>
     </div>
     </div>
