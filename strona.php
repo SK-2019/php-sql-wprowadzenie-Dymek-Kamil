@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styleee.css">
+    <link rel="stylesheet" href="styledoformularz.css">
 </head>
 <body>
     <div class="con">
         <div class="item b">
-            <h1>Dodano:</h1>
+            <h1>Wyświetla:</h1>
 <?php
         echo("Imie:".$_POST['imie']."<br>");
         echo("Dzial:".$_POST['dzial']."<br>");
