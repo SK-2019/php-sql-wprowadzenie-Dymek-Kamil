@@ -15,7 +15,7 @@
             <a class="link c" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
             <a class="link d" href="Funkcje agregujące.php">Funkcje agregujące</a>
             <a class="link h" href="data i czas.php">Data i Czas</a>
-            <a class="link z" href="formularz/formularz.html">Formularz</a>
+            <a class="link z" href="formularz.html">Formularz</a>
             <a class="link y" href="daneDoBazy.html">DaneDoBazy</a>
         </div>
         <div class="item a">
