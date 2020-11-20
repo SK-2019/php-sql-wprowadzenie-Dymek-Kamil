@@ -8,6 +8,6 @@ $sql =  "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `
 echo($sql);
 mysqli_query($conn,$sql);
 mysqli_close($conn);
-header("location:http://127.0.0.1/cos/insert/danedobazy.html");
+header("location:https://testing-some-stuff.herokuapp.com/daneDoBazy.html");
 ?>
 
