@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styleee.css">
 </head>
 <body>
     <div class="con">
-        <div class="nav">
-            <a class="link z" href="index.php">Wróć do strony głównej</a>
-        </div>
-        <div class="item a">
+        <div class="a">
             <h1>Dodaj Pracownika :D</h1>
         <form action="strona.php" method="POST">
             <input type="text" name="imie" placeholder="Imie">
@@ -20,6 +17,7 @@
             <br><input type="date" name="data_">
             <input type="submit" value="Dodaj">
             </form>
+            <a class="z" href="index.php">Wróć do strony głównej</a>
         </div>
         <div class="item y">
             <h1>Usuń Pracownika</h1>
