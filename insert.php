@@ -11,6 +11,6 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-header("location:https://testing-some-stuff.herokuapp.com/daneDoBazy.html");
+header("location:http://127.0.0.1/cos/insert/danedobazy.php");
 ?>
 
