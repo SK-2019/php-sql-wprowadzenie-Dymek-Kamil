@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="con">
-    <div class="nav">
+<div class="con">
+        <div class="nav">
         <a class="link a" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil" >GITHUB</a>
             <a class="link e" href="index.php">Index</a>
             <a class="link b" href="Pracownicy.php">Pracownicy</a>
@@ -20,60 +20,70 @@
             <a class="link g" href="książki.php">Książki</a>
         </div>
         <div class="item a">
-        <h1 class="h1zb">Kamil Dymek</h1>
-            <h2 class="h2za">Zad 1 Select * From pracownicy where dzial=2</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy where dzial=2");
+                $sql="Select * From biblAutor";
+                $result=$conn->query($sql);
+                echo("<h2> Zad 1 ".$sql."</h2>");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
-                    echo("<th>Imie</th>");
-                    echo("<th>Dzial</th>");
-                    echo("<th>Zarobki</th>");
-                    echo("<th>Data_Urodzenia</th>");
+                    echo("<th>Autor</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
-                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td>");
                             echo("</tr>");}
                 echo("</table>");
         ?>
         </div>
         <div class="item b">
-            <h2 class="h2zb">Zad 2 Select * From pracownicy where dzial=2 or dzial=3</h2>
-        <?php
-            require_once("connect.php");
-                $result=$conn->query("Select * From pracownicy where dzial=2 or dzial=3");
-                echo("<table border=1>");
-                    echo("<th>ID</th>");
-                    echo("<th>Imie</th>");
-                    echo("<th>Dzial</th>");
-                    echo("<th>Zarobki</th>");
-                    echo("<th>Data_Urodzenia</th>");
-                        while($row=$result->fetch_assoc()){
-                            echo("<tr>");
-                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
-                            echo("</tr>");}
-                echo("</table>");
-            ?>
-        </div>
-        <div class="item c">
-            <h2 class=h2zc>Zad 3 Select * from pracownicy where zarobki<30</h2>
         <?php
                 require_once("connect.php");
-                $result=$conn->query("Select * from pracownicy where zarobki<30");
-                    echo("<table border=1>");
+                $sql="Select * From biblTytul";
+                $result=$conn->query($sql);
+                echo("<h2> Zad 2 ".$sql."</h2>");
+                echo("<table border=1>");
                     echo("<th>ID</th>");
-                    echo("<th>Imie</th>");
-                    echo("<th>Dzial</th>");
-                    echo("<th>Zarobki</th>");
-                    echo("<th>Data_Urodzenia</th>");
+                    echo("<th>Tytuł</th>");
                         while($row=$result->fetch_assoc()){
                             echo("<tr>");
-                            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                            echo("<td>".$row["id"]."</td><td>".$row["tytuł"]."</td>");
                             echo("</tr>");}
                 echo("</table>");
-            ?>
+        ?>
         </div>
-    </div>
+        <div class="item c">
+        <?php
+                require_once("connect.php");
+                $sql="Select * From biblAutor_biblTytul";
+                $result=$conn->query($sql);
+                echo("<h2> Zad 3 ".$sql."</h2>");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>ID Autor</th>");
+                    echo("<th>ID Tytuł</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id"]."</td><td>".$row["biblAutor_id"]."</td><td>".$row["biblTytul_id"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
+        </div>
+        <div class="item d">
+        <?php
+                require_once("connect.php");
+                $sql="Select * From biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id";
+                $result=$conn->query($sql);
+                echo("<h2> Zad 3 ".$sql."</h2>");
+                echo("<table border=1>");
+                    echo("<th>ID</th>");
+                    echo("<th>Autor</th>");
+                    echo("<th>Tytuł</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytuł"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
+        </div>
 </body>
 </html>

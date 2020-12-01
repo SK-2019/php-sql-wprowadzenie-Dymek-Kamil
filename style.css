@@ -37,6 +37,7 @@ tr:hover{background-color:gray;}
     width:100vw;
     background:black;
     height: 40px;
+    position:fixed;
 
 }
 .link{
@@ -61,6 +62,8 @@ tr:hover{background-color:gray;}
     height: 40px;
     background:black;
     position:absolute;
+    top:4.3%;
     left:3%;
+    position:fixed;
 }
 

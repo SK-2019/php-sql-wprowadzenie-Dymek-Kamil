@@ -21,6 +21,9 @@
             </form>
         </div>
         <div class="item c">
+        <form action="reset.php" method="POST">
+        <input class="przycisk" type="submit" value="Reset">
+        </form>
         <h1>Usuwanie Pracownika</h1>
         <?php
                 require_once("connect.php");
