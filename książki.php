@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 <div class="con">
@@ -24,15 +24,12 @@
                 require_once("connect.php");
                 $sql="Select * From biblAutor";
                 $result=$conn->query($sql);
-                echo("<h2> Zad 1 ".$sql."</h2>");
-                echo("<table border=1>");
-                    echo("<th>ID</th>");
-                    echo("<th>Autor</th>");
+                echo("<h2> Zad 1 ".$sql."</h2>");     
+                echo("<select id='s_table' name='s_table'>");
                         while($row=$result->fetch_assoc()){
-                            echo("<tr>");
-                            echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td>");
-                            echo("</tr>");}
-                echo("</table>");
+                            echo("<option value=".$row['autor'].">".$row['autor']."</option>");}
+                            echo("<input type='Submit' value='Sumbit'><br>");
+                echo("</select>");
         ?>
         </div>
         <div class="item b">
