@@ -22,7 +22,7 @@
         <div class="piosenki">Menu</div>
         <div id="menupiosenki" class="menupiosenki">
                 <div class="opcja 1" onclick="openA()">Piosenka</div>
-                <div class="opcja 2">Opcja 11</div>
+                <div class="opcja 2">Opcja 13</div>
                 <div class="opcja 3">Opcja 9</div>
             </div>
         <div id="mySidenav" class="sidenav">
