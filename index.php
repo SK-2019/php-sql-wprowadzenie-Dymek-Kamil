@@ -134,15 +134,5 @@ var dropdownA = document.getElementsByClassName("opcja 1");
     }
     });
  }
- function randombg(){
-  var random= Math.floor(Math.random() * 6) + 0;
-  var bigSize = ["url('https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg')",
-                 "url('https://wallpaperaccess.com/full/2029165.jpg')",
-                 "url('https://wallpaperaccess.com/full/7285.jpg')",
-                 "url('https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg')",
-                 "url('https://external-preview.redd.it/NXaM31uCGigLDeBAPwnQaMQjQF8SQHFph3pEDbemTo8.jpg?auto=webp&s=0a76219b5ffc1d3d3bf69334fbef1b5f418bd384')",
-                 "url('https://wow.zamimg.com/uploads/blog/images/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg')"];
-  document.getElementById("random").style.backgroundImage=bigSize[random];
-}
 </script>
 </html>
