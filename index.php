@@ -17,13 +17,13 @@
         <div id="myWallpaper" class="wallpaper">
         <div class="nav">
             <h1>Kamil Dymek</h1>
-            <span class="paski">&#9776</span>
+            <span onclick="openNav()">&#9776</span>
         </div>
         <div class="piosenki">Menu</div>
         <div id="menupiosenki" class="menupiosenki">
                 <div class="opcja 1" onclick="openA()">Piosenka</div>
-                <div class="opcja 2">Opcja 2</div>
-                <div class="opcja 3">Opcja 3</div>
+                <div class="opcja 2">Opcja 15</div>
+                <div class="opcja 3">Opcja 9</div>
             </div>
         <div id="mySidenav" class="sidenav">
             <h2>Menu</h2>
@@ -51,19 +51,6 @@
         </div>
 </body>
 <script>
-var dropdownOpennav = document.getElementsByClassName("paski");
-    var i;
-
-    for (i = 0; i < dropdownOpennav.length; i++) {
-    dropdownOpennav[i].addEventListener("click", function() {
-    var dropdownContentOpennav = document.getElementById("mySidenav");
-    if (dropdownContentOpennav.style.left === "-250px") {
-    dropdownContentOpennav.style.left = "0px";
-    } else {
-    dropdownContentOpennav.style.display = "-250px";
-    }
-    });
- }
     var dropdown = document.getElementsByClassName("menuprac");
     var i;
 
@@ -120,6 +107,17 @@ var dropdownOpennav = document.getElementsByClassName("paski");
     }
     });
  }
+ function openNav() {
+    document.getElementById("mySidenav").style.left = "0px";
+    document.getElementById("myCon").style.marginleft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.left = "-250px";
+    document.getElementById("myCon").style.marginleft = "0px";
+    document.getElementById("MenuP").style.display = "none";
+    document.getElementById("menuf").style.display = "none";
+    document.getElementById("menub").style.display = "none";
+}
 var dropdownA = document.getElementsByClassName("opcja 1");
     var i;
 
