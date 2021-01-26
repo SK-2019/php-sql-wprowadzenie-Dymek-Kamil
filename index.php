@@ -12,7 +12,6 @@
     <script src="script.js"></script>
 </head>
 <body>
-<iframe id="alliwant" class="alliwant" width="560" height="315" src="https://www.youtube.com/embed/RmUWWVZw28E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div id="myCon" class="con">
         <div id="myWallpaper" class="wallpaper">
         <div class="nav">
@@ -46,6 +45,9 @@
                     <a href="Biblioteka/książki.php">Książki</a>
                     <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
                 </div>   
+        </div>
+        <div id="Audio">
+        <source src="eyesblue.mp3" type="audio/mpeg">
         </div>
         </div>
         </div>
@@ -132,7 +134,7 @@ var dropdownA = document.getElementsByClassName("opcja 1");
     }
     });
  }
- var x = document.getElementById("alliwant"); 
+ var x = document.getElementById("Audio"); 
 
 function playAudio() { 
   x.play(); 
