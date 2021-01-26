@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="stylee.css">
 </head>
 <body>
 <div class="con">
@@ -23,46 +23,23 @@
         <?php
                 require_once("connect.php");
                 $sql="Select * From biblAutor";
-                $result=$conn->query($sql);
-                echo("<h2> Zad 1 ".$sql."</h2>");     
-                echo("<select id='s_table' name='s_table'>");
+                $result=$conn->query($sql); 
+                echo("<form action='wypozyczalnia.php' method='POST'>");    
+                echo("<select id='autor' name='autor'>");
                         while($row=$result->fetch_assoc()){
                             echo("<option value=".$row['autor'].">".$row['autor']."</option>");}
                             echo("<input type='Submit' value='Sumbit'><br>");
                 echo("</select>");
-        ?>
-        </div>
-        <div class="item b">
-        <?php
+
                 require_once("connect.php");
                 $sql="Select * From biblTytul";
-                $result=$conn->query($sql);
-                echo("<h2> Zad 2 ".$sql."</h2>");
-                echo("<table border=1>");
-                    echo("<th>ID</th>");
-                    echo("<th>Tytuł</th>");
+                $result=$conn->query($sql);     
+                echo("<select id='tytul' name='tytul'>");
                         while($row=$result->fetch_assoc()){
-                            echo("<tr>");
-                            echo("<td>".$row["id"]."</td><td>".$row["tytuł"]."</td>");
-                            echo("</tr>");}
-                echo("</table>");
-        ?>
-        </div>
-        <div class="item c">
-        <?php
-                require_once("connect.php");
-                $sql="Select * From biblAutor_biblTytul";
-                $result=$conn->query($sql);
-                echo("<h2> Zad 3 ".$sql."</h2>");
-                echo("<table border=1>");
-                    echo("<th>ID</th>");
-                    echo("<th>ID Autor</th>");
-                    echo("<th>ID Tytuł</th>");
-                        while($row=$result->fetch_assoc()){
-                            echo("<tr>");
-                            echo("<td>".$row["id"]."</td><td>".$row["biblAutor_id"]."</td><td>".$row["biblTytul_id"]."</td>");
-                            echo("</tr>");}
-                echo("</table>");
+                            echo("<option value=".$row['tytuł'].">".$row['tytuł']."</option>");}
+                            echo("<input type='Submit' value='Sumbit'><br>");
+                echo("</select>");
+                echo("</form>");
         ?>
         </div>
         <div class="item d">

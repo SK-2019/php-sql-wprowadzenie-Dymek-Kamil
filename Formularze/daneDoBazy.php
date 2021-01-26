@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="con">
+    <a class="k" href="index.php">Wróć do strony głównej</a>
         <div class="item a">
             <h1>Dodaj Pracownika</h1>
         <form action="insert.php" method="POST">
@@ -45,7 +46,6 @@
                 echo("</table>");
         ?>
     </div>
-        <a class="k" href="index.php">Wróć do strony głównej</a>
     </div>
 </body>
 </html>
