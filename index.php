@@ -18,6 +18,9 @@
             <h1>Kamil Dymek</h1>
             <span onclick="openNav()">&#9776</span>
         </div>
+        <div id="Audio">
+        <source src="eyesblue.mp3" type="audio/mpeg">
+        </div>
         <div class="piosenki">Menu</div>
         <div id="menupiosenki" class="menupiosenki">
                 <div class="opcja 1" onclick="openA()">Piosenka</div>
@@ -45,9 +48,6 @@
                     <a href="Biblioteka/książki.php">Książki</a>
                     <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
                 </div>   
-        </div>
-        <div id="Audio">
-        <source src="eyesblue.mp3" type="audio/mpeg">
         </div>
         </div>
         </div>
