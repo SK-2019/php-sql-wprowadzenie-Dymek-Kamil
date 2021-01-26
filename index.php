@@ -17,7 +17,7 @@
         <div id="myWallpaper" class="wallpaper">
         <div class="nav">
             <h1>Kamil Dymek</h1>
-            <span onclick="openNav()">&#9776</span>
+            <span class="paski" onclick="openNav()">&#9776</span>
         </div>
         <div class="piosenki">Menu</div>
         <div id="menupiosenki" class="menupiosenki">
@@ -51,6 +51,20 @@
         </div>
 </body>
 <script>
+
+var dropdownOpennav = document.getElementsByClassName("paski");
+    var i;
+
+    for (i = 0; i < dropdownOpennav.length; i++) {
+    dropdownOpennav[i].addEventListener("click", function() {
+    var dropdownContentOpennav = document.getElementById("sidenav");
+    if (dropdownContentOpennav.style.left === "0px") {
+    dropdownContentOpennav.style.left = "-250px";
+    } else {
+    dropdownContentOpennav.style.display = "0px";
+    }
+    });
+ }
     var dropdown = document.getElementsByClassName("menuprac");
     var i;
 
