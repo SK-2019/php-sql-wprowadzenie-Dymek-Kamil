@@ -14,9 +14,8 @@
     width:100vw;
     background-image:url(https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg);
     background-repeat:no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    position:fixed;
+    background-position:center center;
     z-index: 1;
 }
 .nav{
