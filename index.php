@@ -19,7 +19,7 @@
             <span onclick="openNav()">&#9776</span>
         </div>
         <div id="Audio">
-        <source src="eyesblue.mp3" type="audio/mpeg">
+        <source src="eyesblue.mp3">
         </div>
         <div class="piosenki">Menu</div>
         <div id="menupiosenki" class="menupiosenki">
