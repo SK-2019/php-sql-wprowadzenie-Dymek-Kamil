@@ -57,10 +57,10 @@ var dropdownOpennav = document.getElementsByClassName("paski");
     for (i = 0; i < dropdownOpennav.length; i++) {
     dropdownOpennav[i].addEventListener("click", function() {
     var dropdownContentOpennav = document.getElementById("mySidenav");
-    if (dropdownContentOpennav.style.left === "0px") {
-    dropdownContentOpennav.style.left = "-250px";
+    if (dropdownContentOpennav.style.left === "-250px") {
+    dropdownContentOpennav.style.left = "0px";
     } else {
-    dropdownContentOpennav.style.display = "0px";
+    dropdownContentOpennav.style.display = "-250px";
     }
     });
  }
