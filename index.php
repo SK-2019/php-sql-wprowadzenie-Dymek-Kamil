@@ -22,7 +22,7 @@
         <div class="piosenki">Menu</div>
         <div id="menupiosenki" class="menupiosenki">
                 <div class="opcja 1" onclick="openA()">Piosenka</div>
-                <div class="opcja 2">Opcja 15</div>
+                <div class="opcja 2" onclick="playAudio()">Opcja 15</div>
                 <div class="opcja 3">Opcja 9</div>
             </div>
         <div id="mySidenav" class="sidenav">
@@ -132,5 +132,14 @@ var dropdownA = document.getElementsByClassName("opcja 1");
     }
     });
  }
+ var x = document.getElementById("alliwant"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
 </script>
 </html>
