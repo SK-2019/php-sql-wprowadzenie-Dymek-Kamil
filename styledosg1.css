@@ -153,6 +153,7 @@ span{
 .activesidebar{
     color:rgb(41, 151, 153);
     padding-left:60px;
+    border-left:3px solid rgb(41, 151, 153);
 }
 .activeopcje{
     background:cornflowerblue;
