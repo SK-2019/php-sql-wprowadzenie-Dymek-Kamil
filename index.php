@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="myCon" class="con">
-        <div onload="randombg()" id="myWallpaper" class="wallpaper">
+        <div id="myWallpaper" class="wallpaper">
         <div class="nav">
             <h1>Kamil Dymek</h1>
             <span onclick="openNav()">&#9776</span>
