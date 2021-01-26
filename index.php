@@ -51,7 +51,6 @@
         </div>
 </body>
 <script>
-
 var dropdownOpennav = document.getElementsByClassName("paski");
     var i;
 
@@ -121,17 +120,6 @@ var dropdownOpennav = document.getElementsByClassName("paski");
     }
     });
  }
- function openNav() {
-    document.getElementById("mySidenav").style.left = "0px";
-    document.getElementById("myCon").style.marginleft = "250px";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.left = "-250px";
-    document.getElementById("myCon").style.marginleft = "0px";
-    document.getElementById("MenuP").style.display = "none";
-    document.getElementById("menuf").style.display = "none";
-    document.getElementById("menub").style.display = "none";
-}
 var dropdownA = document.getElementsByClassName("opcja 1");
     var i;
 
