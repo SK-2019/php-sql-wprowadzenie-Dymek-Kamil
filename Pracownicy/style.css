@@ -108,12 +108,12 @@ span{
     color:#2cdaf5;
     border-left: 3px solid #2cdaf5;
 }
-.a a:hover:not(.active){
+.link link:hover:not(.active){
     padding-left:60px;
     transition:0.3s;
     color:#2cdaf5;
 }
-.sidenav a{
+.link{
     text-decoration: none;
     height: 40px;
     width: 100%;
@@ -126,7 +126,7 @@ span{
     align-items: center;
     overflow-x: hidden;
 }
-.sidenav a:hover:not(.activesidebar){
+.link:hover:not(.activesidebar){
     padding-left:80px;
     transition:0.3s;
     color:#2cdaf5;
