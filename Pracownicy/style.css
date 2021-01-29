@@ -6,8 +6,10 @@
     box-sizing: border-box;
 }
 .con{
-    height:100vh;
-    position: relative;
+    height: 100vh;
+    background-image:url(https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 table, th, td{
     border:1px solid black;
@@ -32,17 +34,12 @@ th, td{
 #s_table{
     margin:25px;
 }
-.con{
-    height:100vh;
-    position: relative;
-}
 .wallpaper{
-    height: 100vh;
-    width:100vw;
+    height: 100%;
+    width:100%;
     background-image:url(https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg);
     background-repeat:no-repeat;
     background-size: cover;
-    z-index: 1;
 }
 .nav{
     width: 100%;
@@ -94,7 +91,7 @@ span{
     color:black;
     cursor: pointer;
 }
-.menuprac,.menufor,.menubib, .a a{
+.menuprac,.menufor,.menubib, .sg{
     text-decoration: none;
     height: 60px;
     width: 100%;
