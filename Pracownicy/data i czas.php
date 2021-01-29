@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kamil Dymek</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="con">
     <div class="nav">
-        <a class="link a" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil" >GITHUB</a>
-            <a class="link e" href="index.php">Index</a>
-            <a class="link b" href="Pracownicy.php">Pracownicy</a>
-            <a class="link c" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-            <a class="link d" href="Funkcje agregujące.php">Funkcje agregujące</a>
-            <a class="link h" href="data i czas.php">Data i Czas</a>
-            <a class="link z" href="formularz.html">Formularz</a>
-            <a class="link y" href="daneDoBazy.php">DaneDoBazy</a>
-            <a class="link g" href="książki.php">Książki</a>
+            <h1>Kamil Dymek</h1>
+            <span onclick="openNav()">&#9776</span>
         </div>
-        <div class="item a">
-        <div class="nav1">
-                <a class="link g" href="#1">Data i Czas</a>
-                <a class="link e" href="#2">Formatowanie dat</a>
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <h2>Menu</h2>
+            <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
+            <div class="sg" id="sg">Strona Główna</div>
+            <div class="menuprac" id="menuprac">Pracownicy</div>
+                <div id="menup" class="menup">
+                    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
+                    <a href="Pracownicy/Pracownicy.php">Pracownicy</a>
+                    <a href="Pracownicy/Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
+                    <a href="Pracownicy/Funkcje Agregujące.php">Funkcje Agregujące</a>
+                    <a href="Pracownicy/Data i Czas.php">Data i Czas</a>
+                </div>
+            <div class="menufor" id="menufor">Formularze</div>
+                <div id="menuf" class="menuf">
+                    <a href="Formularze/formularz.html">Formularz</a>
+                    <a href="Formularze/daneDoBazy.php">Danedobazy</a>
+                </div>
+            <div id="menubib" class="menubib">Biblioteka</div>
+                <div id="menub" class="menub">
+                    <a href="Biblioteka/książki.php">Książki</a>
+                    <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
+                </div>   
+        </div>
         <h1>Kamil Dymek</h1>
         <h1 id="1">Data i Czas</h1>
         <h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
