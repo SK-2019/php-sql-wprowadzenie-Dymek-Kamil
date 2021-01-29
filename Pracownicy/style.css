@@ -3,16 +3,15 @@
     padding:0px;
     list-style: none;
     user-select:none;
-    box-sizing: border-box;
 }
 .con{
     height: 100%;
     width: 100%;
-    position: absolute;
+    background-position: absolute;
     background-image:url(https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg);
     background-repeat:no-repeat;
     background-size: cover;
-    background-position:fixed;
+    background-attachment: fixed;
     z-index:-1;
 }
 table, th, td{
