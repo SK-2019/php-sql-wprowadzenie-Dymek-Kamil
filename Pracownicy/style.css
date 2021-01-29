@@ -151,3 +151,7 @@ span{
     align-items: center;
     z-index:0;
 }
+h2{
+    display:flex;
+    justify-content: center;
+}

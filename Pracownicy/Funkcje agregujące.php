@@ -9,21 +9,31 @@
 <body>
     <div class="con">
     <div class="nav">
-        <a class="link a" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil" >GITHUB</a>
-            <a class="link e" href="index.php">Index</a>
-            <a class="link b" href="Pracownicy.php">Pracownicy</a>
-            <a class="link c" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-            <a class="link d" href="Funkcje agregujące.php">Funkcje agregujące</a>
-            <a class="link h" href="data i czas.php">Data i Czas</a>
-            <a class="link z" href="formularz.html">Formularz</a>
-            <a class="link y" href="daneDoBazy.php">DaneDoBazy</a>
-            <a class="link g" href="książki.php">Książki</a>
+            <h1>Kamil Dymek</h1>
+            <span onclick="openNav()">&#9776</span>
         </div>
-        <div class="nav1">
-                <a class="link g" href="#1">Funkcje</a>
-                <a class="link e" href="#2">Group By</a>
-                <a class="link f" href="#3">Having</a>
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <h2>Menu</h2>
+            <a href="../index.php" class="sg" id="sg">Strona Główna</a>
+            <div class="menuprac" id="menuprac">Pracownicy</div>
+                <div id="menup" class="menup">
+                    <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
+                    <a class="link" href="Pracownicy/Pracownicy.php">Pracownicy</a>
+                    <a class="link" href="Pracownicy/Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
+                    <a class="link" href="Pracownicy/Funkcje Agregujące.php">Funkcje Agregujące</a>
+                    <a class="link" href="Pracownicy/Data i Czas.php">Data i Czas</a>
+                </div>
+            <div class="menufor" id="menufor">Formularze</div>
+                <div id="menuf" class="menuf">
+                    <a class="link" href="Formularze/formularz.html">Formularz</a>
+                    <a class="link" href="Formularze/daneDoBazy.php">Danedobazy</a>
+                </div>
+            <div id="menubib" class="menubib">Biblioteka</div>
+                <div id="menub" class="menub">
+                    <a class="link" href="Biblioteka/książki.php">Książki</a>
+                    <a class="link" href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
+                </div>   
+        </div>
         <div class="item a">
         <h1 class="h1zb">Kamil Dymek</h1>
         <h1 id="1">FUNKCJE</h1>
