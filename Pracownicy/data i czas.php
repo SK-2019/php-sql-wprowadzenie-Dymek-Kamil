@@ -16,7 +16,7 @@
         <div id="mySidenav" class="sidenav">
             <h2>Menu</h2>
             <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
-            <a class="sg" id="sg">Strona Główna</a>
+            <a href="../index.php" class="sg" id="sg">Strona Główna</a>
             <div class="menuprac" id="menuprac">Pracownicy</div>
                 <div id="menup" class="menup">
                     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
@@ -36,7 +36,6 @@
                     <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
                 </div>   
         </div>
-        <h1 id="1">Data i Czas</h1>
         <h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
         <?php
                 require_once("connect.php");
