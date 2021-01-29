@@ -102,7 +102,7 @@ span{
     border-left: 3px solid none;
     cursor: pointer;
 }
-.menuprac:hover:not(.activesidebar),.menufor:hover:not(.activesidebar),.menubib:hover:not(.activesidebar){
+.sg:hover,.menuprac:hover:not(.activesidebar),.menufor:hover:not(.activesidebar),.menubib:hover:not(.activesidebar){
     padding-left:60px;
     transition:0.3s;
     color:#2cdaf5;

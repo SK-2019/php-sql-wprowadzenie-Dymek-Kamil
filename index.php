@@ -29,7 +29,6 @@
             </div>
         <div id="mySidenav" class="sidenav">
             <h2>Menu</h2>
-            <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
             <div class="menuprac" id="menuprac">Pracownicy</div>
                 <div id="menup" class="menup">
                     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
@@ -109,17 +108,6 @@
     }
     });
  }
- function openNav() {
-    document.getElementById("mySidenav").style.left = "0px";
-    document.getElementById("myCon").style.marginleft = "250px";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.left = "-250px";
-    document.getElementById("myCon").style.marginleft = "0px";
-    document.getElementById("MenuP").style.display = "none";
-    document.getElementById("menuf").style.display = "none";
-    document.getElementById("menub").style.display = "none";
-}
 var dropdownA = document.getElementsByClassName("opcja 1");
     var i;
 
@@ -134,5 +122,14 @@ var dropdownA = document.getElementsByClassName("opcja 1");
     }
     });
  }
+ function openNav() {
+    if(document.getElementById("mySidenav").style.left === "0px"){
+        document.getElementById("mySidenav").style.left = "-250px";
+    }
+    else{
+        document.getElementById("mySidenav").style.left = "0px";
+    }
+
+}
 </script>
 </html>

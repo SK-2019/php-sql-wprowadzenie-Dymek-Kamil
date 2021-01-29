@@ -15,7 +15,6 @@
         </div>
         <div id="mySidenav" class="sidenav">
             <h2>Menu</h2>
-            <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
             <a href="../index.php" class="sg" id="sg">Strona Główna</a>
             <div class="menuprac" id="menuprac">Pracownicy</div>
                 <div id="menup" class="menup">
@@ -480,30 +479,15 @@
     });
  }
  function openNav() {
-    document.getElementById("mySidenav").style.left = "0px";
-    document.getElementById("myCon").style.marginleft = "250px";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.left = "-250px";
-    document.getElementById("myCon").style.marginleft = "0px";
-    document.getElementById("MenuP").style.display = "none";
-    document.getElementById("menuf").style.display = "none";
-    document.getElementById("menub").style.display = "none";
-}
-var dropdownA = document.getElementsByClassName("opcja 1");
-    var i;
-
-    for (i = 0; i < dropdownA.length; i++) {
-    dropdownA[i].addEventListener("click", function() {
-    this.classList.toggle("activeopcje");
-    var dropdownContentA = document.getElementById("alliwant");
-    if (dropdownContentA.style.display === "block") {
-    dropdownContentA.style.display = "none";
-    } else {
-    dropdownContentA.style.display = "block";
+    if(document.getElementById("mySidenav").style.left === "0px"){
+        document.getElementById("mySidenav").style.left = "-250px";
     }
-    });
- }
+    else{
+        document.getElementById("mySidenav").style.left = "0px";
+    }
+
+}
+
 </script>
 </body>
 </html>
