@@ -19,23 +19,24 @@
             <a href="../index.php" class="sg" id="sg">Strona Główna</a>
             <div class="menuprac" id="menuprac">Pracownicy</div>
                 <div id="menup" class="menup">
-                    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
-                    <a href="Pracownicy/Pracownicy.php">Pracownicy</a>
-                    <a href="Pracownicy/Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-                    <a href="Pracownicy/Funkcje Agregujące.php">Funkcje Agregujące</a>
-                    <a href="Pracownicy/Data i Czas.php">Data i Czas</a>
+                    <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
+                    <a class="link" href="Pracownicy/Pracownicy.php">Pracownicy</a>
+                    <a class="link" href="Pracownicy/Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
+                    <a class="link" href="Pracownicy/Funkcje Agregujące.php">Funkcje Agregujące</a>
+                    <a class="link" href="Pracownicy/Data i Czas.php">Data i Czas</a>
                 </div>
             <div class="menufor" id="menufor">Formularze</div>
                 <div id="menuf" class="menuf">
-                    <a href="Formularze/formularz.html">Formularz</a>
-                    <a href="Formularze/daneDoBazy.php">Danedobazy</a>
+                    <a class="link" href="Formularze/formularz.html">Formularz</a>
+                    <a class="link" href="Formularze/daneDoBazy.php">Danedobazy</a>
                 </div>
             <div id="menubib" class="menubib">Biblioteka</div>
                 <div id="menub" class="menub">
-                    <a href="Biblioteka/książki.php">Książki</a>
-                    <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
+                    <a class="link" href="Biblioteka/książki.php">Książki</a>
+                    <a class="link" href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
                 </div>   
         </div>
+        <div class="item a">
         <h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
         <?php
                 require_once("connect.php");
