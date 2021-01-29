@@ -35,9 +35,7 @@
                 </div>   
         </div>
         <div class="item a">
-        <h1 class="h1zb">Kamil Dymek</h1>
-        <h1 id="1">FUNKCJE</h1>
-            <h2 class="h2za">Select Sum(zarobki) as sz from pracownicy</h2>
+            <h2>Select Sum(zarobki) as sz from pracownicy</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select sum(zarobki) as sz from pracownicy");
@@ -51,7 +49,7 @@
         ?>
         </div>
         <div class="item b">
-            <h2 class="h2zb">Select Sum(zarobki) as sz from pracownicy where imie like '%a'</h2>
+            <h2>Select Sum(zarobki) as sz from pracownicy where imie like '%a'</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select sum(zarobki) as sz from pracownicy where imie like '%a'");
@@ -65,7 +63,7 @@
             ?>
         </div>
         <div class="item c">
-            <h2 class=h2zc>Select sum(zarobki) as sz from pracownicy where imie not like '%a' and (dzial=2 or dzial=3)</h2>
+            <h2>Select sum(zarobki) as sz from pracownicy where imie not like '%a' and (dzial=2 or dzial=3)</h2>
         <?php
                 require_once("connect.php");
                 $result=$conn->query("Select sum(zarobki) as sz from pracownicy where imie not like '%a' and (dzial=2 or dzial=3) ");
@@ -149,7 +147,6 @@
             ?>
         </div>
         <div class="item h">
-            <h1 id="2">Group By</h1>
             <h2>Select sum(zarobki) as sz from pracownicy group by dzial</h2>
         <?php
                 require_once("connect.php");
@@ -220,7 +217,6 @@
             ?>
         </div>
         <div class="item m">
-            <h1 id="3">Having</h1>
             <h2>Select sum(zarobki) as sz, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial having sum(zarobki)<28</h2>
         <?php
                 require_once("connect.php");
