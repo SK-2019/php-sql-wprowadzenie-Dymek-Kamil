@@ -38,7 +38,7 @@
         <div class="item a">
         <h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
         <?php
-                require_once("connect.php");
+                require("../assets/connect.php");
                 $result=$conn->query("Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
