@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamil Dymek</title>
-    <link rel="stylesheet" href="styledosg1.css">
+    <link rel="stylesheet" href="assets/styledosg1.css">
     <link rel="stylesheet" href="styles.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>src="https://kit.fontawesome.com/a076d05399.js"</script>
@@ -16,9 +16,6 @@
         <div id="myWallpaper" class="wallpaper">
         <div class="nav">
             <h1>Kamil Dymek</h1>
-            <?php
-            echo("<li> SERVER password: ".$_SERVER['pass']);
-            ?>
             <span onclick="openNav()">&#9776</span>
         </div>
         <div id="Audio">
