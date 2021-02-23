@@ -37,7 +37,7 @@
         <h2>Select * from pracownicy</h2>
             <div class="item a">
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * from pracownicy");
                 echo("<table border=1>");
                     echo("<th>Id</th>");
@@ -55,7 +55,7 @@
             <div class="item b">
             <h2>Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie like '%a' and dzial between 2 and 4");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -74,7 +74,7 @@
         <div class="item c">
             <h2>Select avg(zarobki), dzial From pracownicy group by dzial</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select avg(zarobki), dzial, nazwa_dzial From pracownicy, organizacja where dzial=id_org group by dzial");
                 echo("<table border=1>");
                     echo("<th>Avg zarobki</th>");
@@ -90,7 +90,7 @@
             <div class="item d">
             <h2>Select * From pracownicy where imie not like '%a' and zarobki between 15 and 50</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a' and zarobki between 15 and 50");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -109,7 +109,7 @@
         <div class="item e">
             <h2>Select * From pracownicy where zarobki>15 and (dzial=1 or dzial=4</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and zarobki>15 and (dzial=1 or dzial=4)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -128,7 +128,7 @@
     <div class="item f">
         <h2>Select * From pracownicy where dzial=2</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy where dzial=2");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -146,7 +146,7 @@
         <div class="item g">
             <h2>Select * From pracownicy where dzial=2 or dzial=3</h2>
         <?php
-            require_once("connect.php");
+            require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy where dzial=2 or dzial=3");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -164,7 +164,7 @@
         <div class="item h">
             <h2>Select * from pracownicy where zarobki<30</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * from pracownicy where zarobki<30");
                     echo("<table border=1>");
                     echo("<th>ID</th>");

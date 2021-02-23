@@ -37,7 +37,7 @@
         <div class="item a">
             <h2>Select * From pracownicy, organizacja where dzial=id_org</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -57,7 +57,7 @@
         <div class="item b">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=4)</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and (dzial=1 or dzial=4)");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -76,7 +76,7 @@
         <div class="item c">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and imie like '%a'</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie like '%a'");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -95,7 +95,7 @@
         <div class="item d">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a'</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a'");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -114,7 +114,7 @@
         <div class="item e">
             <h2>Select * From pracownicy, organizacja where dzial=id_org order by imie desc</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org order by imie desc");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -133,7 +133,7 @@
         <div class="item f">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and dzial=3 order by imie asc</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and dzial=3 order by imie asc");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -152,7 +152,7 @@
         <div class="item g">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and imie like '%a' order by imie asc</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie like '%a' order by imie asc");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -171,7 +171,7 @@
         <div class="item h">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and imie like '%a' and (dzial=1 or dzial=3) order by zarobki asc</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie like '%a' and (dzial=1 or dzial=3) order by zarobki asc");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -190,7 +190,7 @@
         <div class="item i">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a' order by nazwa_dzial asc, zarobki asc</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and imie not like '%a' order by nazwa_dzial asc, zarobki asc");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -209,7 +209,7 @@
         <div class="item j">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -228,7 +228,7 @@
         <div class="item j">
             <h2>Select * From pracownicy, organizacja where dzial=id_org and (dzial=4 or dzial=2) order by zarobki desc limit 3</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org and (dzial=4 or dzial=2) order by zarobki desc limit 3");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -247,7 +247,7 @@
         <div class="item k">
             <h2>Select * From pracownicy, organizacja where dzial=id_org order by data_urodzenia asc limit 1</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * From pracownicy, organizacja where dzial=id_org order by data_urodzenia asc limit 1");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
