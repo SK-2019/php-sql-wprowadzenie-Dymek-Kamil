@@ -58,7 +58,7 @@
     <div class="item b">
         <h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org and nazwa_dzial='serwis'");
                 echo("<table border=1>");
                     echo("<th>ID</th>");
@@ -78,7 +78,7 @@
     <div class="item c">
         <h2>Select sum(year(curdate())-year(data_urodzenia)) as sl from pracownicy</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select sum(year(curdate())-year(data_urodzenia)) as sl from pracownicy");
                 echo("<table border=1>");
                     echo("<th>Suma Lat</th>");
@@ -92,7 +92,7 @@
     <div class="item d">
         <h2>Select sum(year(curdate())-year(data_urodzenia)) as sl, nazwa_dzial from pracownicy, organizacja where dzial=id_org and nazwa_dzial='handel'</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select sum(year(curdate())-year(data_urodzenia)) as sl, nazwa_dzial from pracownicy, organizacja where dzial=id_org and nazwa_dzial='handel'");
                 echo("<table border=1>");
                     echo("<th>Suma Lat</th>");
@@ -107,7 +107,7 @@
     <div class="item e">
         <h2>Select sum(year(curdate())-year(data_urodzenia)) as sl from pracownicy where imie like '%a'</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select sum(year(curdate())-year(data_urodzenia)) as sl from pracownicy where imie like '%a'");
                 echo("<table border=1>");
                     echo("<th>Suma Lat</th>");
@@ -121,7 +121,7 @@
     <div class="item f">
         <h2>Select sum(year(curdate())-year(data_urodzenia)) as sl from pracownicy where imie not like '%a'</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select sum(year(curdate())-year(data_urodzenia)) as sl from pracownicy where imie not like '%a'");
                 echo("<table border=1>");
                     echo("<th>Suma Lat</th>");
@@ -135,7 +135,7 @@
     <div class="item g">
         <h2>Select avg(year(curdate())-year(data_urodzenia)) as al, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select avg(year(curdate())-year(data_urodzenia)) as al, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial");
                 echo("<table border=1>");
                     echo("<th>Średnia Lat</th>");
@@ -150,7 +150,7 @@
     <div class="item h">
         <h2>Select sum(year(curdate())-year(data_urodzenia)) as sl, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select sum(year(curdate())-year(data_urodzenia)) as sl, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial");
                 echo("<table border=1>");
                     echo("<th>Suma Lat</th>");
@@ -165,7 +165,7 @@
     <div class="item i">
         <h2>Select max(year(curdate())-year(data_urodzenia)) as wiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select max(year(curdate())-year(data_urodzenia)) as maxwiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by nazwa_dzial");
                 echo("<table border=1>");
                     echo("<th>Wiek</th>");
@@ -180,7 +180,7 @@
     <div class="item j">
         <h2>Select min(year(curdate())-year(data_urodzenia)) as minwiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by nazwa_dzial</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select min(year(curdate())-year(data_urodzenia)) as minwiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by nazwa_dzial");
                 echo("<table border=1>");
                     echo("<th>Wiek</th>");
@@ -195,7 +195,7 @@
     <div class="item k">
         <h2>Select min(year(curdate())-year(data_urodzenia)) as minwiek, nazwa_dzial, imie from pracownicy, organizacja where dzial=id_org and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by nazwa_dzial</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select min(year(curdate())-year(data_urodzenia)) as minwiek, nazwa_dzial, imie from pracownicy, organizacja where dzial=id_org and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by nazwa_dzial");
                 echo("<table border=1>");
                     echo("<th>Wiek</th>");
@@ -211,7 +211,7 @@
     <div class="item l">
         <h2>Select datediff(curdate(),data_urodzenia) as dni, imie from pracownicy</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select datediff(curdate(),data_urodzenia) as dni, imie from pracownicy");
                 echo("<table border=1>");
                     echo("<th>Imie</th>");
@@ -226,7 +226,7 @@
     <div class="item m">
         <h2>Select * from pracownicy where imie not like '%a' order by data_urodzenia asc limit 1</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select * from pracownicy where imie not like '%a' order by data_urodzenia asc limit 1");
                 echo("<table border=1>");
                     echo("<th>Id</th>");
@@ -245,7 +245,7 @@
     <h1 id="2">Formatowanie Dat</h1>
         <h2>SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SET lc_time_names = 'pl_PL'");
                 $result=$conn->query("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy");
                 echo("<table border=1>");
@@ -264,7 +264,7 @@
     <div class="item o">
         <h2>SELECT DATE_FORMAT(CURDATE(), '%W')as data</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SET lc_time_names = 'pl_PL'");
                 $result=$conn->query("SELECT DATE_FORMAT(CURDATE(), '%W')as data");
                 echo("<table border=1>");
@@ -279,7 +279,7 @@
     <div class="item p">
         <h2>SELECT *, DATE_FORMAT(data_urodzenia,'%w-%M-%Y') as dat from pracownicy</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SELECT *, DATE_FORMAT(data_urodzenia,'%w-%M-%Y') as dat from pracownicy");
                 echo("<table border=1>");
                     echo("<th>Id</th>");
@@ -297,7 +297,7 @@
     <div class="item r">
         <h2>Select curtime(4) as sek</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("Select curtime(4) as sek");
                 echo("<table border=1>");
                     echo("<th>Godzina</th>");
@@ -311,7 +311,7 @@
     <div class="item s">
         <h2>Select *, Date_format(data_urodzenia,'%Y-%M-%W') as dat from pracownicy</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("select *, Date_format(data_urodzenia,'%Y-%M-%W') as dat from pracownicy");
                 echo("<table border=1>");
                     echo("<th>Id</th>");
@@ -329,7 +329,7 @@
     <div class="item t">
         <h2>SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy");
                 echo("<table border=1>");
                     echo("<th>Imie</th>");
@@ -346,7 +346,7 @@
     <div class="item u">
         <h2>SELECT DATE_FORMAT('2003-03-11', '%j') as uro</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SELECT DATE_FORMAT('2003-03-11', '%j') as uro");
                 echo("<table border=1>");
                     echo("<th>Dzień roku</th>");
@@ -369,7 +369,7 @@
                 WHEN dzien = 'Sunday' THEN 7
                 END ASC"</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia FROM pracownicy order by 
                 case  
                 WHEN dzien = 'Poniedziałek' THEN 1
@@ -394,7 +394,7 @@
     <div class="item w">
         <h2>SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'");
                 echo("<table border=1>");
                     echo("<th>Pracownicy urodzeni w pon</th>");
@@ -408,7 +408,7 @@
     <div class="item y">
         <h2>SELECT Count(DATE_FORMAT(data_urodzenia,'%W')) as ilosc, DATE_FORMAT(data_urodzenia,'%W') as dzien FROM pracownicy group by dzien ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC</h2>
         <?php
-                require_once("connect.php");
+                require_once("../assets/connect.php");
                 $result=$conn->query("SELECT Count(DATE_FORMAT(data_urodzenia,'%W')) as ilosc, DATE_FORMAT(data_urodzenia,'%W') as dzien FROM pracownicy group by dzien ORDER BY CASE WHEN dzien = 'Poniedziałek' THEN 1 WHEN dzien = 'Wtorek' THEN 2 WHEN dzien = 'Środa' THEN 3 WHEN dzien= 'Czwartek' THEN 4 WHEN dzien = 'Piątek' THEN 5 WHEN dzien = 'Sobota' THEN 6 WHEN dzien = 'Niedziela' THEN 7 END ASC");
                 echo("<table border=1>");
                     echo("<th>Dzien</th>");
