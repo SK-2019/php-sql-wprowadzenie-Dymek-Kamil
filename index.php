@@ -43,7 +43,7 @@
                     <a href="Formularze/daneDoBazy.php">Danedobazy</a>
                 </div>
             <div id="menubib" class="menubib">Biblioteka</div>
-                <div id="menub" class="menub">
+                <div id="menub" class="menub">S
                     <a href="Biblioteka/książki.php">Książki</a>
                     <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
                 </div>   
