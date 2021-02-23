@@ -16,6 +16,9 @@
         <div id="myWallpaper" class="wallpaper">
         <div class="nav">
             <h1>Kamil Dymek</h1>
+            <?php
+            echo("<li> SERVER password: ".$_SERVER['pass']);
+            ?>
             <span onclick="openNav()">&#9776</span>
         </div>
         <div id="Audio">
