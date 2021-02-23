@@ -21,13 +21,6 @@
         <div id="Audio">
         <source src="eyesblue.mp3">
         </div>
-        <?php
-        require_once("config.php");
-        echo("<li> SERVER addres:".$_SERVER['addres']);
-        echo("<li> SERVER addres:".$_SERVER['username']);
-        echo("<li> SERVER addres:".$_SERVER['pass']);
-        echo("<li> SERVER addres:".$_SERVER['db']);
-        ?>
         <div class="piosenki">Menu</div>
         <div id="menupiosenki" class="menupiosenki">
                 <div class="opcja 1" onclick="openA()">Piosenka</div>
