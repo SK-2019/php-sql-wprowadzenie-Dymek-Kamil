@@ -9,7 +9,7 @@ $password = $_SERVER['password'];
 $dbname = $_SERVER['dbname'];
 
 
-    $conn= new mysqli($_SERVER['addres'],$_SERVER['username'],$_SERVER['password'],$_SERVER['dbname']);
+    $conn= new mysqli($servername,$username,$password,$dbname);
     if ($conn->connect_error) {
         die("connection failed: ".mysqli_connect_error());
 
