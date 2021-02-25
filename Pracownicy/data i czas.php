@@ -21,8 +21,8 @@
                     <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
                     <a class="link" href="Pracownicy.php">Pracownicy</a>
                     <a class="link" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-                    <a class="link" href="Funkcje Agregujące.php">Funkcje Agregujące</a>
-                    <a class="link" href="Data i Czas.php">Data i Czas</a>
+                    <a class="link" href="Funkcje agregujące.php">Funkcje Agregujące</a>
+                    <a class="link" href="data i czas.php">Data i Czas</a>
                 </div>
             <div class="menufor" id="menufor">Formularze</div>
                 <div id="menuf" class="menuf">
