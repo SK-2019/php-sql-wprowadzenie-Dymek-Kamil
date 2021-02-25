@@ -22,10 +22,7 @@
         $hostname = $_SERVER['HTTP_HOST'];
 
         if ($hostname == '127.0.0.1'){
-            require_once("assets/config.php");
-        }
-        
-            echo("<li> hostname:".$hostname);
+            require_once("assets/config.php");   }    
             echo("<li> SERVER password: ".$_SERVER['pass']);
             ?>
         <div class="piosenki">Menu</div>
