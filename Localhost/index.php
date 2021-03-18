@@ -16,8 +16,6 @@
     </form>
     <div class="tabelka">
     <?php
-    $d=strtotime("now");
-    echo(date("Y-m-d h:i:sa", $d));
     require_once("connect.php");
     $result=$conn->query("Select * From pracownicy");
     echo("<table border=1>");
