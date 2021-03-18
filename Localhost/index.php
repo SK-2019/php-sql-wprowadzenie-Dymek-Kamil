@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-
     <form action="insert.php" method="POST">
             <input type="text" name="imie" placeholder="Imie">
             <input type="text" name="dzial" placeholder="Dzial">
