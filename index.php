@@ -15,7 +15,7 @@
     <div id="myCon" class="con">
         <div id="myWallpaper" class="wallpaper">
         <div class="nav">
-            <h1>Kamil Dymekrul</h1>
+            <h1>Kamil Dymeniekrul</h1>
             <span onclick="openNav()">&#9776</span>
         </div>
         <?php
