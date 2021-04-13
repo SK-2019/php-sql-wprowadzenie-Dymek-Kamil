@@ -74,7 +74,7 @@
     align-items: center;
 }
 .linka{
-    padding:10px;
+    padding:5px;
     text-decoration: none;
     background:lightseagreen;
 }
@@ -84,7 +84,7 @@
     transition:1s;
 }
 .linkb{
-    padding:10px;
+    padding:5px;
     text-decoration: none;
     background:lightpink;
 }
