@@ -18,13 +18,6 @@
             <h1>Kamil Dymek</h1>
             <span onclick="openNav()">&#9776</span>
         </div>
-        <?php
-        $hostname = $_SERVER['HTTP_HOST'];
-
-        if ($hostname == '127.0.0.1'){
-            require_once("assets/config.php");   }    
-            echo("<li> SERVER password: ".$_SERVER['pass']);
-            ?>
         <div class="piosenki">Menu</div>
         <div id="menupiosenki" class="menupiosenki">
                 <div class="opcja 1" onclick="openA()">Piosenka</div>
@@ -50,7 +43,8 @@
                 <div id="menub" class="menub">
                     <a href="Biblioteka/książki.php">Książki</a>
                     <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
-                </div>   
+                </div> 
+                <a href="Cwiczenia/index.html">Flexbox</a>  
         </div>
         </div>
         </div>
