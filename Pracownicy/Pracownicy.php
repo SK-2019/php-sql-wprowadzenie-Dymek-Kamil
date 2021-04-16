@@ -32,6 +32,8 @@
                 <div id="menub" class="menub">
                     <a class="link" href="../Biblioteka/książki.php">Książki</a>
                     <a class="link" href="../Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
+                <a href="Cwiczenia/index.html">Flexbox</a> 
+                <a href="Cwiczenia/wieledowielu.php">wieledowielu</a>
                 </div>   
         </div>
         <h2>Select * from pracownicy</h2>

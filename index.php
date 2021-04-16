@@ -18,12 +18,6 @@
             <h1>Kamil Dymek</h1>
             <span onclick="openNav()">&#9776</span>
         </div>
-        <div class="piosenki">Menu</div>
-        <div id="menupiosenki" class="menupiosenki">
-                <div class="opcja 1" onclick="openA()">Piosenka</div>
-                <div class="opcja 2" onclick="playAudio()">Opcja 15</div>
-                <div class="opcja 3">Opcja 9</div>
-            </div>
         <div id="mySidenav" class="sidenav">
             <h2>Menu</h2>
             <div class="menuprac" id="menuprac">Pracownicy</div>
@@ -91,33 +85,6 @@
     dropdownContentbib.style.display = "none";
     } else {
     dropdownContentbib.style.display = "block";
-    }
-    });
- }
- var dropdownpios = document.getElementsByClassName("piosenki");
-    var i;
-
-    for (i = 0; i < dropdownpios.length; i++) {
-    dropdownpios[i].addEventListener("click", function() {
-    var dropdownContentpios = this.nextElementSibling;
-    if (dropdownContentpios.style.display === "block") {
-    dropdownContentpios.style.display = "none";
-    } else {
-    dropdownContentpios.style.display = "block";
-    }
-    });
- }
-var dropdownA = document.getElementsByClassName("opcja 1");
-    var i;
-
-    for (i = 0; i < dropdownA.length; i++) {
-    dropdownA[i].addEventListener("click", function() {
-    this.classList.toggle("activeopcje");
-    var dropdownContentA = document.getElementById("alliwant");
-    if (dropdownContentA.style.display === "block") {
-    dropdownContentA.style.display = "none";
-    } else {
-    dropdownContentA.style.display = "block";
     }
     });
  }
