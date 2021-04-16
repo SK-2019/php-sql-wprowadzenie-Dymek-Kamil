@@ -44,7 +44,8 @@
                     <a href="Biblioteka/książki.php">Książki</a>
                     <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
                 </div> 
-                <a href="Cwiczenia/index.html">Flexbox</a>  
+                <a href="Cwiczenia/index.html">Flexbox</a> 
+                <a href="Cwiczenia/wieledowielu.php">wieledowielu</a> 
         </div>
         </div>
         </div>
