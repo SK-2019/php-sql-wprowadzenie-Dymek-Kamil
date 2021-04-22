@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="../assets/styledocw.css">
 </head>
 <body>
 <div class="con">
         <div class="nav">
-        <a class="link a" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil" >GITHUB</a>
-            <a class="link e" href="index.php">Index</a>
-            <a class="link b" href="Pracownicy.php">Pracownicy</a>
-            <a class="link c" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-            <a class="link d" href="Funkcje agregujące.php">Funkcje agregujące</a>
-            <a class="link h" href="data i czas.php">Data i Czas</a>
-            <a class="link z" href="formularz.html">Formularz</a>
-            <a class="link y" href="daneDoBazy.php">DaneDoBazy</a>
-            <a class="link g" href="książki.php">Książki</a>
+            <?php include("../assets/header.php") ?>
+        </div>
+        <div class="sidenav">
+        <?php 
+        include("../assets/menu.php"); 
+        ?>  
         </div>
         <div class="item a">
         <?php
