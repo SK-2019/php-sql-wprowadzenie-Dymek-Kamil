@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamil Dymek</title>
-    <link rel="stylesheet" href="assets/styledosg1.css">
+    <link rel="stylesheet" href="assets/styledosg.css">
     <link rel="stylesheet" href="styles.scss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>src="https://kit.fontawesome.com/a076d05399.js"</script>
@@ -13,35 +13,14 @@
 </head>
 <body>
     <div id="myCon" class="con">
-        <div id="myWallpaper" class="wallpaper">
+        <div class="wallpaper">
         <div class="nav">
-            <h1>Kamil Dymek</h1>
-            <span onclick="openNav()">&#9776</span>
+            <?php include("assets/header.php") ?>
         </div>
         <div id="mySidenav" class="sidenav">
-            <h2>Menu</h2>
-            <div class="menuprac" id="menuprac">Pracownicy</div>
-                <div id="menup" class="menup">
-                    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
-                    <a href="Pracownicy/Pracownicy.php">Pracownicy</a>
-                    <a href="Pracownicy/Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-                    <a href="Pracownicy/Funkcje agregujące.php">Funkcje Agregujące</a>
-                    <a href="Pracownicy/data i czas.php">Data i Czas</a>
-                </div>
-            <div class="menufor" id="menufor">Formularze</div>
-                <div id="menuf" class="menuf">
-                    <a href="Formularze/formularz.html">Formularz</a>
-                    <a href="Formularze/daneDoBazy.php">Danedobazy</a>
-                </div>
-            <div id="menubib" class="menubib">Biblioteka</div>
-                <div id="menub" class="menub">
-                    <a href="Biblioteka/książki.php">Książki</a>
-                    <a href="Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
-                </div> 
-                <a href="Cwiczenia/index.html">Flexbox</a> 
-                <a href="Cwiczenia/wieledowielu.php">wieledowielu</a> 
-        </div>
-        </div>
+        <?php 
+        include("assets/menu.php"); 
+        ?>
         </div>
 </body>
 <script>
@@ -97,5 +76,19 @@
     }
 
 }
+var dropdowncw = document.getElementsByClassName("menucw");
+    var i;
+
+    for (i = 0; i < dropdownbib.length; i++) {
+    dropdowncw[i].addEventListener("click", function() {
+    this.classList.toggle("activesidebar");
+    var dropdownContentcw = this.nextElementSibling;
+    if (dropdownContentcw.style.display === "block") {
+    dropdownContentcw.style.display = "none";
+    } else {
+    dropdownContentcw.style.display = "block";
+    }
+    });
+ }
 </script>
 </html>
