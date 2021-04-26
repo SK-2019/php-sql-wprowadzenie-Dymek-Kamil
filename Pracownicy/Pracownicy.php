@@ -2,42 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
     <div class="con">
-    <div class="nav">
-            <h1>Kamil Dymek</h1>
-            <span onclick="openNav()">&#9776</span>
+    <div class="wallpaper">
+        <div class="nav">
+            <?php include("../assets/header.php") ?>
         </div>
         <div id="mySidenav" class="sidenav">
-            <h2>Menu</h2>
-            <a href="../index.php" class="sg" id="sg">Strona Główna</a>
-            <div class="menuprac" id="menuprac">Pracownicy</div>
-            <div id="menup" class="menup">
-                    <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
-                    <a class="link" href="Pracownicy.php">Pracownicy</a>
-                    <a class="link" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-                    <a class="link" href="Funkcje agregujące.php">Funkcje Agregujące</a>
-                    <a class="link" href="data i czas.php">Data i Czas</a>
-                </div>
-            <div class="menufor" id="menufor">Formularze</div>
-                <div id="menuf" class="menuf">
-                    <a class="link" href="../Formularze/formularz.html">Formularz</a>
-                    <a class="link" href="../Formularze/daneDoBazy.php">Danedobazy</a>
-                </div>
-            <div id="menubib" class="menubib">Biblioteka</div>
-                <div id="menub" class="menub">
-                    <a class="link" href="../Biblioteka/książki.php">Książki</a>
-                    <a class="link" href="../Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
-                <a href="Cwiczenia/index.html">Flexbox</a> 
-                <a href="Cwiczenia/wieledowielu.php">wieledowielu</a>
-                </div>   
+        <?php 
+        include("../assets/menu.php"); 
+        ?>
         </div>
-        <h2>Select * from pracownicy</h2>
-            <div class="item a">
+           <div class="item a">
+           <h2>Select * from pracownicy</h2>
         <?php
                 require_once("../assets/connect.php");
                 $result=$conn->query("Select * from pracownicy");
@@ -53,8 +35,7 @@
                             echo("</tr>");}
                 echo("</table>");
         ?>
-            </div>
-            <div class="item b">
+
             <h2>Select * From pracownicy where imie like '%a' and dzial between 2 and 4</h2>
         <?php
                 require_once("../assets/connect.php");
@@ -72,8 +53,6 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        </div>
-        <div class="item c">
             <h2>Select avg(zarobki), dzial From pracownicy group by dzial</h2>
         <?php
                 require_once("../assets/connect.php");
@@ -107,8 +86,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        </div>
-        <div class="item e">
+
             <h2>Select * From pracownicy where zarobki>15 and (dzial=1 or dzial=4</h2>
         <?php
                 require_once("../assets/connect.php");
@@ -126,8 +104,7 @@
                             echo("</tr>");}
                 echo("</table>");
                 ?>
-    </div>
-    <div class="item f">
+
         <h2>Select * From pracownicy where dzial=2</h2>
         <?php
                 require_once("../assets/connect.php");
@@ -144,8 +121,7 @@
                             echo("</tr>");}
                 echo("</table>");
         ?>
-        </div>
-        <div class="item g">
+>
             <h2>Select * From pracownicy where dzial=2 or dzial=3</h2>
         <?php
             require_once("../assets/connect.php");
@@ -162,8 +138,7 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        </div>
-        <div class="item h">
+
             <h2>Select * from pracownicy where zarobki<30</h2>
         <?php
                 require_once("../assets/connect.php");
@@ -180,9 +155,12 @@
                             echo("</tr>");}
                 echo("</table>");
             ?>
-        </div>
-                        </div>
-            <script>
+        </div> 
+        </div>  
+    </div>
+
+</body>
+<script>
     var dropdown = document.getElementsByClassName("menuprac");
     var i;
 
@@ -239,6 +217,20 @@
     }
     });
  }
+var dropdownA = document.getElementsByClassName("opcja 1");
+    var i;
+
+    for (i = 0; i < dropdownA.length; i++) {
+    dropdownA[i].addEventListener("click", function() {
+    this.classList.toggle("activeopcje");
+    var dropdownContentA = document.getElementById("alliwant");
+    if (dropdownContentA.style.display === "block") {
+    dropdownContentA.style.display = "none";
+    } else {
+    dropdownContentA.style.display = "block";
+    }
+    });
+ }
  function openNav() {
     if(document.getElementById("mySidenav").style.left === "0px"){
         document.getElementById("mySidenav").style.left = "-250px";
@@ -248,7 +240,19 @@
     }
 
 }
+var dropdowncw = document.getElementsByClassName("menucw");
+    var i;
 
+    for (i = 0; i < dropdownbib.length; i++) {
+    dropdowncw[i].addEventListener("click", function() {
+    this.classList.toggle("activesidebar");
+    var dropdownContentcw = this.nextElementSibling;
+    if (dropdownContentcw.style.display === "block") {
+    dropdownContentcw.style.display = "none";
+    } else {
+    dropdownContentcw.style.display = "block";
+    }
+    });
+ }
 </script>
-</body>
 </html>

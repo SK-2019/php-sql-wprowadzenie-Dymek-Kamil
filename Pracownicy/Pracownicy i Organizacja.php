@@ -7,32 +7,15 @@
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-    <div class="con">
-    <div class="nav">
-            <h1>Kamil Dymek</h1>
-            <span onclick="openNav()">&#9776</span>
+<div class="con">
+    <div class="wallpaper">
+        <div class="nav">
+            <?php include("../assets/header.php") ?>
         </div>
         <div id="mySidenav" class="sidenav">
-            <h2>Menu</h2>
-            <a href="../index.php" class="sg" id="sg">Strona Główna</a>
-            <div class="menuprac" id="menuprac">Pracownicy</div>
-            <div id="menup" class="menup">
-                    <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
-                    <a class="link" href="Pracownicy.php">Pracownicy</a>
-                    <a class="link" href="Pracownicy i Organizacja.php">Pracownicy i Organizacja</a>
-                    <a class="link" href="Funkcje agregujące.php">Funkcje Agregujące</a>
-                    <a class="link" href="data i czas.php">Data i Czas</a>
-                </div>
-            <div class="menufor" id="menufor">Formularze</div>
-                <div id="menuf" class="menuf">
-                    <a class="link" href="../Formularze/formularz.html">Formularz</a>
-                    <a class="link" href="../Formularze/daneDoBazy.php">Danedobazy</a>
-                </div>
-            <div id="menubib" class="menubib">Biblioteka</div>
-                <div id="menub" class="menub">
-                    <a class="link" href="../Biblioteka/książki.php">Książki</a>
-                    <a class="link" href="../Biblioteka/wypożyczalnia.php">Wypożyczalnia</a>
-                </div>   
+        <?php 
+        include("../assets/menu.php"); 
+        ?>
         </div>
         <div class="item a">
             <h2>Select * From pracownicy, organizacja where dzial=id_org</h2>
@@ -330,7 +313,20 @@
     }
 
 }
+var dropdowncw = document.getElementsByClassName("menucw");
+    var i;
 
+    for (i = 0; i < dropdownbib.length; i++) {
+    dropdowncw[i].addEventListener("click", function() {
+    this.classList.toggle("activesidebar");
+    var dropdownContentcw = this.nextElementSibling;
+    if (dropdownContentcw.style.display === "block") {
+    dropdownContentcw.style.display = "none";
+    } else {
+    dropdownContentcw.style.display = "block";
+    }
+    });
+ }
 </script>
 </body>
 </html>
