@@ -3,7 +3,11 @@
     padding:0px;
 }
 .con{
-    height:100%;
+    height: 100vh;
+    background-image:url(https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
 }
 table, th, td{
     border:1px solid black;
@@ -27,25 +31,12 @@ th, td{
 }
 tr:nth-child(even){background-color: #f2f2f2;}
 tr:hover{background-color:gray;}
-.item{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
 *{
     margin:0px;
     padding:0px;
     list-style: none;
     user-select:none;
     box-sizing: border-box;
-}
-.wallpaper{
-    height: 100vh;
-    background-image:url(https://www.pixel4k.com/wp-content/uploads/2019/03/spiderman-miles-lost-in-space-4k_1553071367.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
-    z-index: 1;
 }
 .nav{
     width: 100%;
@@ -97,7 +88,7 @@ span{
     color:black;
     cursor: pointer;
 }
-.menuprac,.menufor,.menubib, .sg, .menucw{
+.menuprac,.menufor,.menubib, .sg, .menucw, .Flexbox{
     text-decoration: none;
     height: 60px;
     width: 100%;
@@ -112,7 +103,7 @@ span{
     border-left: 3px solid none;
     cursor: pointer;
 }
-.sg:hover,.menuprac:hover:not(.activesidebar),.menufor:hover:not(.activesidebar),.menubib:hover:not(.activesidebar),.menucw:hover:not(.activesidebar){
+.Flexbox:hover,.sg:hover,.menuprac:hover:not(.activesidebar),.menufor:hover:not(.activesidebar),.menubib:hover:not(.activesidebar),.menucw:hover:not(.activesidebar){
     padding-left:60px;
     transition:0.3s;
     color:#2cdaf5;
@@ -171,4 +162,18 @@ span{
 }
 .menuc{
     display:none;
+}
+.item h2{
+    color:wheat;
+}
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.notion{
+    padding:10px;
+    margin-right: 10px;
+    text-decoration: none;
+    background: lime;
 }

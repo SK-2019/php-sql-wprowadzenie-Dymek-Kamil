@@ -132,3 +132,9 @@ span{
 .menuc{
     display:none;
 }
+.notion{
+    padding:10px;
+    margin-right: 10px;
+    text-decoration: none;
+    background: lime;
+}
