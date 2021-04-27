@@ -31,45 +31,19 @@ h1{
     justify-content: center;
     margin-left:45%;
 }
-span{
-    font-size:35px;
-    cursor: pointer;
-    position:absolute;
-    top:0px;
-    left:5px;
-}
 .sidenav {
     height: 100%;
     width: 250px;
     position: fixed;
-    left:-250px;
     z-index: 1;
     background-color:#103262;
     overflow-x: hidden;
     transition: 0.5s;
     opacity:0.9;
   }
-.sidenav h2{
-    width:100%;
-    height:75px;
-    background:#164cd2;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-}
-.closebtn{
-    text-decoration: none;
-    position:absolute;
-    top:1.3%;
-    right:3%;
-    font-size:50px;
-    color:black;
-    cursor: pointer;
-}
 .menuprac,.menufor,.menubib, .a a,.menucw{
     text-decoration: none;
-    height: 60px;
+    height: 50px;
     width: 100%;
     font-size:20px;
     color:white;
@@ -81,12 +55,6 @@ span{
     transition: 0.5s;
     border-left: 3px solid none;
     cursor: pointer;
-}
-.menuprac:hover:not(.activesidebar),.menufor:hover:not(.activesidebar),.menubib:hover:not(.activesidebar),.menucw:hover:not(.activesidebar){
-    padding-left:60px;
-    transition:0.3s;
-    color:#2cdaf5;
-    border-left: 3px solid #2cdaf5;
 }
 .a a:hover:not(.active){
     padding-left:60px;
@@ -110,27 +78,6 @@ span{
     padding-left:80px;
     transition:0.3s;
     color:#2cdaf5;
-}
-.menup{
-    display:none;
-}
-.menuf{
-    display:none;
-}
-.menub{
-    display:none;
-}
-.activesidebar{
-    color:#2cdaf5;
-    padding-left:60px;
-    border-left:3px solid #2cdaf5;
-}
-.activeopcje{
-    background:cornflowerblue;
-    padding-left:40px;
-}
-.menuc{
-    display:none;
 }
 .notion{
     padding:10px;

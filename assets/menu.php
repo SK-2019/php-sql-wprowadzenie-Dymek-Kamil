@@ -1,4 +1,3 @@
-            <h2>Menu</h2>
             <a href="../index.php" class="sg" id="sg">Strona Główna</a>
             <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Dymek-Kamil">GITHUB</a>
             <div class="menuprac" id="menuprac">Pracownicy</div>
